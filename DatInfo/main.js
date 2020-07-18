@@ -1,4 +1,4 @@
-function getweather()
+function getData()
 {
     var var1="";
     var xhttp = new XMLHttpRequest();
@@ -9,10 +9,10 @@ function getweather()
         {
             var1 = JSON.parse(this.responseText);
             document.getElementById('input1').value = var1.result.rank;
-            document.getElementById('input2').value = Number(var1.main.temp_min)-273;
-            document.getElementById('input3').value = Number(var1.main.temp_max)-273;
-            document.getElementById('input4').value = "100";
-            document.getElementById('input5').value = var1.wind.speed;
+            document.getElementById('input2').value = Number(var1.main.temp_min);
+            document.getElementById('input3').value = Number(var1.main.temp_max);
+            document.getElementById('input4').value = var1.result.rank;
+            document.getElementById('input5').value = '100';
             document.getElementById('input6').value = var1.wind.speed;
         }
     };

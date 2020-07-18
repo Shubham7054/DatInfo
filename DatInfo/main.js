@@ -15,7 +15,6 @@ function getweather()
             document.getElementById('input5').value = var1.wind.speed;
             document.getElementById('input6').value = var1.wind.speed;
         }
-        
     };
 
     var s=document.getElementById('username1').value;

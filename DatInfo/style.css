@@ -1,5 +1,28 @@
 #format{
     padding-top: 5px;
     padding-bottom: 5px;
-    border:3px red solid;
+    border:3px white solid;
+}
+
+
+
+
+
+/*#button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    
+  }*/
+
+
+
+#button:active {
+  
+  transform: translateY(4px);
 }

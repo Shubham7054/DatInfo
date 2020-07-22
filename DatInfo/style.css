@@ -4,7 +4,10 @@
     border:3px white solid;
 }
 
-
+#float{
+  display:flex;
+  flex-direction: row;
+}
 
 
 

@@ -56,4 +56,33 @@ function getData()
     var s=document.getElementById('username1').value;
     xhttp.open("GET", "https://codeforces.com/api/user.rating?handle="+s, true);
     xhttp.send();
+
+
+
+    var var2="";
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function()
+    {
+        if (this.readyState == 4 && this.status == 200)
+        {
+            var2 = JSON.parse(this.responseText);
+            var l=var2.result.length;
+
+            
+
+
+            //document.getElementById("testing").innerHTML = "Scroll Down To View Result";
+
+
+            document.getElementById('input7').value = var2.result[0].country;
+            document.getElementById('input8').value = var2.result[0].maxRank;
+            document.getElementById('input9').value = var2.result[0].friendOfCount;
+        }
+        
+    };
+
+    //var s=document.getElementById('username1').value;
+    xhttp.open("GET", "https://codeforces.com/api/user.info?handles="+s, true);
+    xhttp.send();
 }

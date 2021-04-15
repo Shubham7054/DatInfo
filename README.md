@@ -4,6 +4,6 @@
 # Steps:
  Enter Your codeforces username
 
- Scroll down
+ Scroll Down
  
  You are good to go

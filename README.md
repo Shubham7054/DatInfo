@@ -2,7 +2,7 @@
  Show you codeforces Data
 
 # Steps:
- Enter Your codeforces username
+ Enter Your Codeforces username
 
  Scroll Down
  
